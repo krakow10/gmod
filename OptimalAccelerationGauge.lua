@@ -368,6 +368,9 @@ local function CreateGUIs()
 	P=LocalPlayer()
 	LastAngle=P:EyeAngles().y or 0
 	LastVelocity=P:GetAbsVelocity():Length2D() or 0
+	
+	FadeBegin=tick()+3
+	WasHovering=true
 
 	Panel=newGui("DPanel")
 	Panel:SetSize(Width,Height)
